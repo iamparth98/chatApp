@@ -1,13 +1,12 @@
 import { Link } from "react-router-dom";
 
-function Register() {
+function Login() {
   return (
-    <div className="register">
+    <div className="login">
       <div className="formContainer">
         <span>Panda Chat</span>
         <div className="formWrapper">
           <form>
-            <input type="text" name="name" placeholder="Name" />
             <input type="email" name="email" id="" placeholder="Email" />
             <input
               type="password"
@@ -15,10 +14,9 @@ function Register() {
               id=""
               placeholder="Password"
             />
-            <input type="file" />
-            <button type="submit"> Sign Up</button>
+            <button type="submit">Login</button>
             <span>
-              Already have an account? <Link to="/login">Login</Link>
+              Don&apos;t have an account? <Link to="/register">Rgister</Link>
             </span>
           </form>
         </div>
@@ -26,4 +24,4 @@ function Register() {
     </div>
   );
 }
-export default Register;
+export default Login;
